@@ -88,12 +88,16 @@ font-family: "gilroy-heavy";
 .facebook span {
 	background-color: #3B5998;
 }
-.google-plus span {
+.instagram span {
 	background: -webkit-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), -webkit-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
 	background: -moz-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), -moz-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
 	background: -ms-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), -ms-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
 	background: -o-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), -o-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
 	background: radial-gradient(circle farthest-corner at 32% 106%, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), linear-gradient(135deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+}
+.whastapp span {
+  background-color: #25D366;
+  
 }
 
 /* Icons */
@@ -277,7 +281,7 @@ li {
 }
 
 .thm-btn:hover {
-  background-color: var(--thm-black);
+  background-color: #5e5858;
   color: #ffffff;
 }
 .thm-btn:hover i {
@@ -713,7 +717,7 @@ li {
   position: relative;
   display: inline-block;
   padding: 0px 0px;
-  color: var(--thm-black);
+  color: #5D6770;
   font-size: 18px;
   font-family: var(--thm-gilroy-bold);
   line-height: 28px;
@@ -1152,7 +1156,7 @@ li {
   font-size: 35px;
   font-family: var(--thm-gilroy-bold);
   text-transform: uppercase;
-  color: #fed827;
+  color: #FFFFFF;
   line-height: 45px;
 }
 .main-slider-one-left-content h2 {
@@ -1182,7 +1186,7 @@ li {
   color: var(--thm-base);
 }
 .main-slider-one-left-content .thm-btn:hover {
-  background: var(--thm-black);
+  background: #5e5858;
 }
 
 /*--------------------------------------------------------------
@@ -1237,7 +1241,7 @@ li {
   font-size: 35px;
   font-family: var(--thm-gilroy-bold);
   text-transform: uppercase;
-  color: #fed827;
+  color: #FFFFFF;
   line-height: 45px;
 }
 .main-slider-two-left-content h2 {
@@ -1736,7 +1740,7 @@ li {
 }
 
 .mobile-nav__social a:hover {
-  color: var(--thm-primary);
+  color: #5D6770;
 }
 
 .mobile-nav__contact {
@@ -1764,7 +1768,7 @@ li {
 }
 
 .mobile-nav__contact li a:hover {
-  color: var(--thm-primary);
+  color: #5D6770;
 }
 
 .mobile-nav__contact li > i {
@@ -2112,7 +2116,7 @@ li {
   margin-bottom: 32px;
 }
 .anoucement_inner .block-title h4 {
-  color: #fed827;
+  color: #FFFFFF;
   margin-bottom: 4px;
 }
 .anoucement_inner .block-title h2 {
@@ -2234,7 +2238,7 @@ li {
 .mission_and_vission .block-title {
 }
 .mission_and_vission .block-title h4 {
-  color: #fed827;
+  color: #FFFFFF;
 }
 .mission_and_vission .block-title h2 {
   color: #ffffff;
@@ -2288,7 +2292,7 @@ li {
 }
 .mission_and_vission_content h4 {
   font-size: 18px;
-  color: #fed827;
+  color: #FFFFFF;
   font-family: var(--thm-gilroy-bold);
   text-transform: uppercase;
   line-height: 26px;
@@ -2499,7 +2503,7 @@ li {
 }
 .donation_one_inner_title h5 {
   font-size: 24px;
-  color: #fed827;
+  color: #FFFFFF;
   font-family: var(--thm-gilroy-bold);
   line-height: 34px;
   text-transform: uppercase;
@@ -2757,7 +2761,7 @@ li {
   margin-bottom: 142px;
 }
 .subscription .block-title h4 {
-  color: #fed827;
+  color: #FFFFFF;
   margin-bottom: 0;
 }
 .subscription .block-title h2 {
@@ -3617,7 +3621,7 @@ li {
 }
 .mission_and_vission_two_text_box h4 {
   font-size: 18px;
-  color: #fed827;
+  color: #FFFFFF;
   font-family: var(--thm-gilroy-bold);
   text-transform: uppercase;
   line-height: 28px;
@@ -3712,7 +3716,7 @@ li {
 }
 .mission_and_vission_two_text_box_two h4 {
   font-size: 18px;
-  color: #fed827;
+  color: #FFFFFF;
   font-family: var(--thm-gilroy-bold);
   text-transform: uppercase;
   line-height: 28px;
