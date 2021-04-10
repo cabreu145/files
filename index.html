@@ -55,18 +55,19 @@
                     <div class="header_top_three_inner clearfix">
 
                         <div class="header_top_three_inner_left float-left">
-                            <ul id="estado" class="header_top_three_inner_contact_info list-unstyled" style="color: white;">
+                            <ul id="estado" class="header_top_three_inner_contact_info list-unstyled"
+                                style="color: white;">
                                 <script>
                                     var estado = document.querySelector('#estado')
                                     var clima = document.querySelector('#clima')
 
-                                    fetch('http://api.weatherapi.com/v1/current.json?key=8ac65309ca194f528bc193211211004&q=calkini-campeche-mexico')
-                                    .then(res => res.json())
-                                    .then(data=>{
-                                        console.log(data)
-                                        estado.innerHTML = `<li><span class="fas fa-thermometer-half"></span>${data.current.temp_c } °C  ${data.location.name}, ${data.location.region}.</li>`;
-                                        
-                                    })
+                                    fetch('https://api.weatherapi.com/v1/current.json?key=8ac65309ca194f528bc193211211004&q=calkini-campeche-mexico')
+                                        .then(res => res.json())
+                                        .then(data => {
+                                            console.log(data)
+                                            estado.innerHTML = `<li><span class="fas fa-thermometer-half"></span>${data.current.temp_c} °C  ${data.location.name}, ${data.location.region}.</li>`;
+
+                                        })
                                 </script>
                             </ul>
                         </div>
@@ -77,7 +78,7 @@
                                     <a href="#" aria-label="twitter"><i class="fab fa-twitter"></i></a>
                                     <a href="#" aria-label="facebook"><i class="fab fa-facebook-square"></i></a>
                                     <a href="#" aria-label="instagram"><i class="fab fa-instagram"></i></a>
-                                    <a href="#" aria-label="whatsapp"><i class="fab fa-whatsapp"></i></a> 
+                                    <a href="#" aria-label="whatsapp"><i class="fab fa-whatsapp"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -87,7 +88,7 @@
             </div>
 
 
-            <header class="main-nav__header-one" >
+            <header class="main-nav__header-one">
                 <div class="container">
                     <nav class="header-navigation one stricky">
                         <div class="container-box clearfix">
@@ -99,7 +100,7 @@
                                             alt="Awesome Image">
                                     </a>
                                 </div>
-                                <a href="#" class="side-menu__toggler" >
+                                <a href="#" class="side-menu__toggler">
                                     <i class="fa fa-bars" style="background-color: white;"></i>
                                 </a>
                             </div>
@@ -113,9 +114,9 @@
                                     <li class="dropdown">
                                         <a href="#">Publicaciones</a>
                                     </li>
-                                    
+
                                 </ul>
-                                
+
                             </div><!-- /.navbar-collapse -->
                         </div>
                     </nav>
@@ -127,7 +128,10 @@
         <section class="main-slider-one">
             <div class="main-slider-one-shape-round"></div>
             <div class="main-slider-shape-dots"><img src="assets/images/shapes/main-slider-shape-dots.png" alt=""></div>
-            <div class="main-slider-small-round"><div style="padding-top: 40px; padding-right: 20px;"><img src="assets/images/miltonsmile.png"style="width: 150%;" ></div></div>
+            <div class="main-slider-small-round">
+                <div style="padding-top: 40px; padding-right: 20px;"><img src="assets/images/miltonsmile.png"
+                        style="width: 150%;"></div>
+            </div>
             <div class="main-slider-img"><img src="assets/images/mil2.png" style="width: 80%;" alt=""></div>
             <div class="container">
                 <div class="row">
@@ -148,8 +152,7 @@
 
         <!--Top Section One Start-->
         <section class="top_section_one">
-            <div class="top_section_one_shape_2"
-                style="background-image: url(assets/images/shapes/image.png)"></div>
+            <div class="top_section_one_shape_2" style="background-image: url(assets/images/shapes/image.png)"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-xl-4">
@@ -158,15 +161,14 @@
                             <div class="donation_taker_content_inner">
                                 <div class="donation_taker_content">
                                     <h3 style="color: white;">Contacto</h3>
-                                    
+
                                     <p>Pore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
                                 </div>
                                 <div class="donation_taker_input_box">
-                                    
+
                                 </div>
                                 <div class="donation_taker_btn">
-                                    <a href="#" class="thm-btn">Suscribirse <i
-                                            class="fa fa-angle-right"></i></a>
+                                    <a href="#" class="thm-btn">Suscribirse <i class="fa fa-angle-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -241,7 +243,7 @@
         </section>
         <!--Top Section One End-->
 
-        
+
 
         <!--About One Start-->
         <section class="about_one">
@@ -290,10 +292,10 @@
                     <p class="block-title-text">Pore et dolore magna kobita tumi sopno aliqua. Ut enim ad<br>minim
                         veniam, quis nostrud</p>
                 </div>
-                <div class="row" >
+                <div class="row">
                     <div class="col-xl-4 col-lg-4">
                         <!--Mission_And_Vission Single-->
-                        <div class="mission_and_vission_single wow fadeInUp" >
+                        <div class="mission_and_vission_single wow fadeInUp">
                             <div class="mission_and_vission_img">
                                 <img src="assets/images/resources/mission_and_vission_img-1.jpg" alt="">
                             </div>
@@ -358,12 +360,12 @@
                                 <h2>Redes Sociales</h2>
                                 <a href="" class="icon-button twitter"><i class="fab fa-twitter"></i><span></span></a>
                                 <a href="" class="icon-button facebook"><i class="fab fa-facebook"></i><span></span></a>
-                                <a href="" class="icon-button instagram"><i class="fab fa-instagram"></i><span></span></a>
+                                <a href="" class="icon-button instagram"><i
+                                        class="fab fa-instagram"></i><span></span></a>
                                 <a href="" class="icon-button whastapp"><i class="fab fa-whatsapp"></i><span></span></a>
                             </div>
                             <div class="volunteer_one_inner_right">
-                                <a href="#" class="thm-btn">Contacto<i
-                                        class="fa fa-angle-right"></i></a>
+                                <a href="#" class="thm-btn">Contacto<i class="fa fa-angle-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -381,7 +383,7 @@
                     <p class="block-title-text">Pore et dolore magna kobita tumi sopno aliqua. Ut enim ad<br>minim
                         veniam, quis nostrud</p>
                 </div>
-                <div class="row" >
+                <div class="row">
                     <div class="col-xl-5 col-lg-5">
                         <div class="candidate_one_left wow slideInLeft" data-wow-delay="100ms">
                             <div class="candidate_one_img">
@@ -407,7 +409,7 @@
                                     aliqua.</p>
                             </div>
                             <div class="candidate_one_signature">
-                                <div class="candidate_one_signature_img" >
+                                <div class="candidate_one_signature_img">
                                     <img src="assets/images/sonrie.png" style="width: 320px;" alt="">
                                 </div>
                                 <div class="candidate_one_signature_text">
@@ -420,8 +422,8 @@
             </div>
         </section>
         <!--Candidate One End-->
-        
-        
+
+
 
         <!--Site Footer One Start-->
         <footer class="site_footer_one">
@@ -459,7 +461,7 @@
                                             <img src="assets/images/resources/campaign-1-img-3.jpg" alt="">
                                         </div>
                                         <div class="footer-widget__our_campaign_content">
-                                            <h4>Elección  <span>Marzo 24, 2021</span></h4>
+                                            <h4>Elección <span>Marzo 24, 2021</span></h4>
                                             <p><a href="#">Lorem ipsum dolor sit amet consectetur.</a>
                                             </p>
                                         </div>
@@ -478,7 +480,7 @@
                                             <img src="assets/images/resources/campaign-2-img-1.jpg" alt="">
                                         </div>
                                         <div class="footer-widget__our_campaign_content">
-                                            <h4>Inicio de  Campaña <span>Abril 01, 2021</span></h4>
+                                            <h4>Inicio de Campaña <span>Abril 01, 2021</span></h4>
                                             <p><a href="#">Lorem ipsum dolor sit amet consectetur.</a>
                                             </p>
                                         </div>
@@ -531,7 +533,8 @@
                         <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                             <div class="footer-widget__column footer-widget__about marb">
                                 <div class="footer-widget__about_logo">
-                                    <a href=""><img   src="assets/images/miltonwhite.png" style="width: 150px;" alt=""></a>
+                                    <a href=""><img src="assets/images/miltonwhite.png" style="width: 150px;"
+                                            alt=""></a>
                                 </div>
                                 <div class="footer-widget__about_logo_text">
                                     <p>Erosor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
@@ -543,7 +546,7 @@
                                     <a href="#"><i class="fab fa-facebook-square"></i></a>
                                     <a href="#"><i class="fab fa-instagram"></i></a>
                                     <a href="#"><i class="fab fa-whatsapp"></i></a>
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -590,7 +593,7 @@
                                     <li><a href="#">Acerca</a></li>
                                     <li><a href="#">Publicaciones</a></li>
                                     <li><a href="#">Contacto</a></li>
-                                    
+
                                 </ul>
                             </div>
                         </div>
@@ -611,8 +614,9 @@
                 </div>
                 <div class="site_footer_one_menu">
                     <div class="site_footer_one_menu_Designed_by">
-                        <p>Made with<span class="icon-010-heart heart_icon" style="color: rgb(255, 49, 49);"></span>by <span
-                            class="name"><a style="color: inherit; text-decoration:none;" href="http://devend.me/newport/">Cabreu145</span></a></p>
+                        <p>Made with<span class="icon-010-heart heart_icon" style="color: rgb(255, 49, 49);"></span>by
+                            <span class="name"><a style="color: inherit; text-decoration:none;"
+                                    href="http://devend.me/newport/">Cabreu145</span></a></p>
                     </div>
                     <ul class="site_footer_one_menu_list list-unstyled">
                         <li><a href="#">Terminos & Condiciones</a></li>
@@ -644,14 +648,14 @@
             </span>
             <div class="logo-box">
                 <a href="index.html" aria-label="logo image">
-                    <img src="assets/images/miltonwhite.png" style="width: 50%;"  alt="" />
+                    <img src="assets/images/miltonwhite.png" style="width: 50%;" alt="" />
                 </a>
             </div>
             <!-- /.logo-box -->
             <div class="mobile-nav__container clearfix"></div>
             <!-- /.mobile-nav__container -->
-            <ul  class="mobile-nav__contact list-unstyled">
-                <li >
+            <ul class="mobile-nav__contact list-unstyled">
+                <li>
                     <i class="fas fa-thermometer-half"></i>
                     <a id="clima"></a>
                 </li>
@@ -659,12 +663,12 @@
                     var clima = document.querySelector('#clima')
 
                     fetch('https://api.weatherapi.com/v1/current.json?key=8ac65309ca194f528bc193211211004&q=calkini-campeche-mexico')
-                    .then(res => res.json())
-                    .then(data=>{
-                        console.log(data)
-                        clima.innerHTML = `<a>${data.current.temp_c } °C  ${data.location.name}, ${data.location.region}.</a`;
-                        
-                    })
+                        .then(res => res.json())
+                        .then(data => {
+                            console.log(data)
+                            clima.innerHTML = `<a>${data.current.temp_c} °C  ${data.location.name}, ${data.location.region}.</a`;
+
+                        })
                 </script>
             </ul><!-- /.mobile-nav__contact -->
             <div class="mobile-nav__top">
@@ -672,8 +676,8 @@
                     <a href="#" aria-label="twitter"><i class="fab fa-twitter"></i></a>
                     <a href="#" aria-label="facebook"><i class="fab fa-facebook-square"></i></a>
                     <a href="#" aria-label="instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" aria-label="whatsapp"><i class="fab fa-whatsapp"></i></a>  
-                    
+                    <a href="#" aria-label="whatsapp"><i class="fab fa-whatsapp"></i></a>
+
                 </div><!-- /.mobile-nav__social -->
             </div><!-- /.mobile-nav__top -->
         </div>
@@ -693,13 +697,10 @@
             </form>
         </div>
     </div>
-    <script
-  src="assets/js/sdk.min.js"
-  onload="indigitall.init({
+    <script src="assets/js/sdk.min.js" onload="indigitall.init({
     appKey: 'd6d1f0c0-07d5-46e6-b02c-81329aa4c3c4',
     workerPath: 'assets/js/worker.min.js',
-  })"
-  async>
+  })" async>
 </script>
 
 
