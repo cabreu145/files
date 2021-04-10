@@ -980,7 +980,7 @@ li {
   transition: all 500ms ease;
 }
 .header_top_three_inner_contact_info li a:hover {
-  color: var(--thm-primary);
+  color: var(--thm-gray);
 }
 .header_top_three_inner_contact_info li span {
   padding-right: 15px;
@@ -1027,7 +1027,7 @@ li {
   margin-left: 15px;
 }
 .header_top_three_inner_right_social a:hover {
-  color: var(--thm-primary);
+  color: var(--thm-gray);
 }
 
 /* stricky Menu Css */
