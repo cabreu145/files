@@ -650,15 +650,22 @@
             <!-- /.logo-box -->
             <div class="mobile-nav__container clearfix"></div>
             <!-- /.mobile-nav__container -->
-            <ul class="mobile-nav__contact list-unstyled">
-                <li>
-                    <i class="icon-003-envelope"></i>
-                    <a href="mailto:needhelp@polimark.com">contacto@mail.com</a>
+            <ul  class="mobile-nav__contact list-unstyled">
+                <li >
+                    <i class="fas fa-thermometer-half"></i>
+                    <a id="clima"></a>
                 </li>
-                <li>
-                    <i class="icon-004-phone-call"></i>
-                    <a href="tel:666-888-0000">0000-000-00</a>
-                </li>
+                <script>
+                    var clima = document.querySelector('#clima')
+
+                    fetch('http://api.weatherapi.com/v1/current.json?key=8ac65309ca194f528bc193211211004&q=calkini-campeche-mexico')
+                    .then(res => res.json())
+                    .then(data=>{
+                        console.log(data)
+                        clima.innerHTML = `<a>${data.current.temp_c } °C  ${data.location.name}, ${data.location.region}.</a`;
+                        
+                    })
+                </script>
             </ul><!-- /.mobile-nav__contact -->
             <div class="mobile-nav__top">
                 <div class="mobile-nav__social">
