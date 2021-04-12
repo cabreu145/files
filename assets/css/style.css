@@ -2424,7 +2424,7 @@ li {
   transition: all 500ms ease;
 }
 .candidate_one_video__btn:hover {
-  color: var(--thm-primary);
+  color: var(--thm-gray);
 }
 
 .candidate_one_right {
